@@ -1,0 +1,224 @@
+
+/*Border Box*/
+*{
+  box-sizing:border-box;
+}
+
+/*Body CSS*/
+body{
+  font-family: 'Jura', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 22px;
+}
+
+/*Header CSS*/
+h1{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*Hide hyperlink on hover and focus*/
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/*Hide hyperlink on active link*/
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+
+
+
+.navigation-list__item--active {
+    text-decoration: none !important;
+}
+
+/*Header CSS*/
+.page-header {
+  display: flex;
+  max-width: 100%;
+    padding: 20px;
+  margin: 10px 10px;
+  background-color: lightgrey;
+}
+
+/*Remove bullets from navigation menu items*/
+.navigation-list{
+  list-style: none;
+}
+
+/*Display changes to entire list of navigation items*/
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+  text-align: right;
+}
+
+/*Set width of display*/
+.img-responsive{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header Navigation CSS*/
+.navigation__item{
+  flex-grow: 1;
+  text-align: right;
+}
+
+/*Profile picture styling*/
+.img-fluid{
+  float: left;
+  margin: 10px;
+  border-radius: 50%
+}
+
+
+
+
+/*Footer CSS*/
+.page-footer{
+  clear: both;
+  background-color: lightgray;
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+
+}
+
+
+.profile .address{
+  text-align: center;
+}
+
+/*Contact page Form label*/
+.label-class{
+  font-size: 12px;
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+}
+
+/*Contact page Form Input*/
+.input-class{
+  width: 50%;
+}
+
+/*Contact page Send Button*/
+.send-button{
+  background-color:#808080;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+/*Contact page form border*/
+.form-box {
+  background-color:#F5F5F5;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid black;
+
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+/*About Page table CSS*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/*About Page table data and header CSS*/
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 10px;
+
+}
+
+/*About Page table even row color CSS*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*Work Page Projects Grid CSS*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px;
+  grid-gap: 2px;
+
+}
+
+/*Work Page Projects Grid item CSS*/
+.grid__item {
+  padding: 10px;
+  background-color: lightgray;
+
+}
+
+/*Contact page Address css*/
+.address{
+  font-size: 16px;
+  width: 50%;
+background-color: lightgrey;
+  display: inline-block;
+
+}
+
+
+
+/*Media queries*/
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+
+
+
+
+
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+
+@media all and (max-width: 1366px) {
+  .grid {
+    grid-gap: 2px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+
+
+}
